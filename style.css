@@ -1,0 +1,1368 @@
+
+/* =========================================================
+   CIVIL QUANTESTIMATE
+   Modern Civil Engineering UI
+   ========================================================= */
+
+
+/* =========================================================
+   MAIN APPLICATION
+   ========================================================= */
+
+
+
+.stApp {
+    background: var(--cq-bg);
+    color: var(--cq-text);
+}
+
+.block-container {
+    padding-top: 1.4rem;
+    padding-bottom: 3rem;
+    max-width: 1450px;
+}
+
+[data-testid="stHeader"] {
+    background: transparent;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+[data-testid="stSidebar"] {
+    background: var(--cq-sidebar);
+    border-right: 1px solid var(--cq-border);
+}
+
+[data-testid="stSidebar"] > div:first-child {
+    padding: 1.25rem 0.9rem;
+}
+
+[data-testid="stSidebar"] p {
+    color: var(--cq-muted);
+}
+
+
+/* =========================================================
+   SIDEBAR BRAND
+   ========================================================= */
+
+.brand {
+    padding: 0.4rem 0.55rem 1.35rem;
+    border-bottom: 1px solid var(--cq-border);
+}
+
+.brand-top {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.brand-icon {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--cq-green-soft);
+    border: 1px solid var(--cq-green-border);
+
+    font-size: 1.35rem;
+
+    flex-shrink: 0;
+}
+
+.brand-name {
+    color: var(--cq-sidebar-text);
+    font-weight: 850;
+    font-size: 1.12rem;
+}
+
+.brand-name span {
+    color: var(--cq-green);
+}
+
+.brand-sub {
+    color: var(--cq-sidebar-muted);
+    font-size: 0.64rem;
+    letter-spacing: 0.08em;
+    margin-top: 0.55rem;
+}
+
+
+/* =========================================================
+   SIDEBAR NAVIGATION
+   ========================================================= */
+
+.nav-label {
+    color: var(--cq-sidebar-muted);
+
+    font-size: 0.64rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.14em;
+
+    margin: 1.15rem 0.55rem 0.42rem;
+}
+
+[data-testid="stSidebar"] .stButton {
+    margin: 0.14rem 0;
+}
+
+[data-testid="stSidebar"] .stButton > button {
+
+    border: 1px solid transparent;
+
+    background: transparent;
+
+    color: var(--cq-sidebar-text);
+
+    text-align: left;
+
+    border-radius: 10px;
+
+    min-height: 2.45rem;
+
+    padding: 0.5rem 0.72rem;
+
+    font-weight: 650;
+
+    transition: all 0.2s ease;
+}
+
+[data-testid="stSidebar"] .stButton > button:hover {
+
+    background: var(--cq-green-soft);
+
+    border-color: var(--cq-green-border);
+
+    transform: translateX(2px);
+}
+
+[data-testid="stSidebar"] .stButton > button[kind="primary"] {
+
+    background: var(--cq-green-soft);
+
+    border-color: var(--cq-green-border);
+
+    color: #ffffff;
+
+    box-shadow: 0 4px 14px rgba(54, 217, 155, 0.08);
+}
+
+.sidebar-bottom {
+
+    color: var(--cq-sidebar-muted);
+
+    font-size: 0.68rem;
+
+    margin: 3rem 0.55rem 0;
+
+    padding-top: 1rem;
+
+    border-top: 1px solid var(--cq-border);
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   TOP AREA
+   ========================================================= */
+
+.topline {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 1.2rem;
+}
+
+.eyebrow {
+
+    color: var(--cq-green);
+
+    font-size: 0.72rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.1em;
+
+    text-transform: uppercase;
+}
+
+.page-title {
+
+    color: var(--cq-text);
+
+    font-size: 2.15rem;
+
+    line-height: 1.1;
+
+    font-weight: 850;
+
+    margin: 0.3rem 0 0.3rem;
+}
+
+.page-subtitle {
+
+    color: var(--cq-muted);
+
+    font-size: 0.9rem;
+
+    margin-bottom: 1.35rem;
+}
+
+
+/* =========================================================
+   DASHBOARD WELCOME
+   ========================================================= */
+
+.welcome {
+
+    background: var(--cq-welcome);
+
+    border: 1px solid var(--cq-border);
+
+    border-radius: 18px;
+
+    padding: 1.55rem 1.7rem;
+
+    margin-bottom: 1.15rem;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.welcome h1 {
+
+    color: var(--cq-text);
+
+    font-size: 2.05rem;
+
+    margin: 0.2rem 0 0.45rem;
+}
+
+.welcome h1 span {
+    color: var(--cq-green);
+}
+
+.welcome p {
+
+    color: var(--cq-muted);
+
+    margin: 0;
+
+    max-width: 700px;
+
+    line-height: 1.55;
+}
+
+.badge {
+
+    display: inline-block;
+
+    padding: 0.32rem 0.65rem;
+
+    border-radius: 999px;
+
+    background: var(--cq-green-soft);
+
+    color: var(--cq-green-text);
+
+    border: 1px solid var(--cq-green-border);
+
+    font-size: 0.7rem;
+
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   METRIC CARDS
+   ========================================================= */
+
+.metric {
+
+    background: var(--cq-card);
+
+    border: 1px solid var(--cq-border);
+
+    border-radius: 15px;
+
+    padding: 1.05rem 1.1rem;
+
+    min-height: 116px;
+
+    transition: all 0.2s ease;
+}
+
+.metric:hover {
+
+    transform: translateY(-2px);
+
+    border-color: var(--cq-green-border);
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.07);
+}
+
+.metric-icon {
+    font-size: 1.3rem;
+}
+
+.metric-label {
+
+    color: var(--cq-muted);
+
+    font-size: 0.72rem;
+
+    margin-top: 0.35rem;
+}
+
+.metric-value {
+
+    color: var(--cq-text);
+
+    font-size: 1.7rem;
+
+    font-weight: 850;
+
+    margin-top: 0.05rem;
+}
+
+.metric-note {
+
+    color: var(--cq-muted);
+
+    font-size: 0.66rem;
+
+    margin-top: 0.18rem;
+}
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+.section-title {
+
+    color: var(--cq-text);
+
+    font-size: 1.18rem;
+
+    font-weight: 800;
+
+    margin: 1.5rem 0 0.2rem;
+}
+
+.section-sub {
+
+    color: var(--cq-muted);
+
+    font-size: 0.78rem;
+
+    margin-bottom: 0.8rem;
+}
+
+
+/* =========================================================
+   TOOL CARDS
+   ========================================================= */
+
+.tool-card {
+
+    background: var(--cq-card);
+
+    border: 1px solid var(--cq-border);
+
+    border-radius: 15px;
+
+    padding: 1.05rem;
+
+    min-height: 145px;
+
+    transition: all 0.2s ease;
+}
+
+.tool-card:hover {
+
+    transform: translateY(-3px);
+
+    border-color: var(--cq-green-border);
+
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+.tool-icon {
+    font-size: 1.8rem;
+}
+
+.tool-title {
+
+    color: var(--cq-text);
+
+    font-weight: 800;
+
+    font-size: 1rem;
+
+    margin-top: 0.35rem;
+}
+
+.tool-desc {
+
+    color: var(--cq-muted);
+
+    font-size: 0.73rem;
+
+    line-height: 1.4;
+
+    min-height: 40px;
+
+    margin-top: 0.25rem;
+}
+
+
+/* =========================================================
+   AI PANEL
+   ========================================================= */
+
+.ai-panel {
+
+    background: var(--cq-ai);
+
+    border: 1px solid var(--cq-green-border);
+
+    border-radius: 16px;
+
+    padding: 1.15rem 1.25rem;
+
+    margin-top: 1rem;
+
+    box-shadow: 0 8px 25px rgba(54, 217, 155, 0.05);
+}
+
+.ai-panel h3 {
+
+    color: var(--cq-text);
+
+    margin: 0.1rem 0 0.25rem;
+}
+
+.ai-panel p {
+
+    color: var(--cq-muted);
+
+    font-size: 0.78rem;
+
+    margin: 0 0 0.6rem;
+}
+
+
+/* =========================================================
+   CALCULATOR PANELS
+   ========================================================= */
+
+.panel {
+
+    background: var(--cq-card);
+
+    border: 1px solid var(--cq-border);
+
+    border-radius: 16px;
+
+    padding: 1.15rem 1.25rem;
+
+    margin-bottom: 0.8rem;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.025);
+}
+
+.panel-title {
+
+    color: var(--cq-text);
+
+    font-size: 1rem;
+
+    font-weight: 800;
+
+    margin-bottom: 0.75rem;
+}
+
+
+/* =========================================================
+   RESULTS
+   ========================================================= */
+
+.result {
+
+    background: var(--cq-result);
+
+    border: 1px solid var(--cq-green-border);
+
+    border-radius: 16px;
+
+    padding: 1.1rem 1.2rem;
+
+    margin-top: 1rem;
+
+    margin-bottom: 0.8rem;
+}
+
+.result-title {
+
+    color: var(--cq-text);
+
+    font-size: 1rem;
+
+    font-weight: 800;
+
+    margin-bottom: 0.7rem;
+}
+
+.helper {
+
+    color: var(--cq-muted);
+
+    font-size: 0.72rem;
+
+    margin: 0.5rem 0 0.8rem;
+}
+
+
+/* =========================================================
+   STREAMLIT METRICS
+   ========================================================= */
+
+[data-testid="stMetric"] {
+
+    background: var(--cq-card);
+
+    border: 1px solid var(--cq-border);
+
+    border-radius: 12px;
+
+    padding: 0.8rem;
+
+    min-height: 95px;
+}
+
+[data-testid="stMetricLabel"] {
+
+    color: var(--cq-muted) !important;
+}
+
+[data-testid="stMetricValue"] {
+
+    color: var(--cq-text) !important;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.stButton > button,
+.stDownloadButton > button {
+
+    border-radius: 10px;
+
+    min-height: 2.5rem;
+
+    font-weight: 750;
+
+    background: var(--cq-button);
+
+    color: var(--cq-button-text);
+
+    border: 1px solid var(--cq-button-border);
+
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+
+    background: var(--cq-button-hover);
+
+    color: var(--cq-text);
+
+    border-color: var(--cq-green);
+
+    transform: translateY(-1px);
+}
+
+.stButton > button[kind="primary"] {
+
+    background: var(--cq-green-dark);
+
+    color: #ffffff;
+
+    border-color: var(--cq-green);
+}
+
+.stButton > button[kind="primary"]:hover {
+
+    background: var(--cq-green);
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   INPUT FIELDS
+   ========================================================= */
+
+.stTextInput input,
+.stNumberInput input,
+.stTextArea textarea {
+
+    border-radius: 9px !important;
+
+    background: var(--cq-input) !important;
+
+    color: var(--cq-text) !important;
+
+    border-color: var(--cq-border) !important;
+}
+
+.stTextInput input:focus,
+.stNumberInput input:focus,
+.stTextArea textarea:focus {
+
+    border-color: var(--cq-green) !important;
+
+    box-shadow: 0 0 0 1px var(--cq-green) !important;
+}
+
+
+/* =========================================================
+   SELECT BOX
+   ========================================================= */
+
+[data-baseweb="select"] > div {
+
+    border-radius: 9px !important;
+
+    background: var(--cq-input) !important;
+
+    color: var(--cq-text) !important;
+
+    border-color: var(--cq-border) !important;
+}
+
+[data-baseweb="select"] span {
+
+    color: var(--cq-text) !important;
+}
+
+
+/* =========================================================
+   NUMBER INPUT BUTTONS
+   ========================================================= */
+
+[data-testid="stNumberInput"] button {
+
+    background: var(--cq-button) !important;
+
+    color: var(--cq-text) !important;
+
+    border-color: var(--cq-border) !important;
+}
+
+[data-testid="stNumberInput"] button:hover {
+
+    background: var(--cq-green-soft) !important;
+
+    color: var(--cq-green) !important;
+}
+
+
+/* =========================================================
+   TEXT / LABELS
+   ========================================================= */
+
+.stMarkdown,
+label {
+
+    color: var(--cq-text);
+}
+
+[data-testid="stCaptionContainer"] {
+
+    color: var(--cq-muted);
+}
+
+
+/* =========================================================
+   EXPANDER / POPOVER
+   ========================================================= */
+
+[data-testid="stPopover"] button {
+
+    border-radius: 10px;
+      pointer-events: auto;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+
+    text-align: center;
+
+    color: var(--cq-muted);
+
+    font-size: 0.66rem;
+
+    padding-top: 2rem;
+
+    padding-bottom: 1rem;
+}
+
+/* =========================================================
+   STREAMLIT SIDEBAR TOGGLE
+   Desktop behavior preserved
+   ========================================================= */
+
+/* Keep Streamlit's sidebar controls visible */
+[data-testid="stSidebarCollapseButton"],
+[data-testid="stSidebarCollapsedControl"] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 999999 !important;
+}
+
+/* Keep the native control size */
+[data-testid="stSidebarCollapseButton"] button,
+[data-testid="stSidebarCollapsedControl"] button {
+    width: auto !important;
+    min-width: 2rem !important;
+    height: 2rem !important;
+    padding: 0.25rem !important;
+    margin: 0 !important;
+}
+
+
+/* =========================================================
+   TOP ACTION BUTTONS — FULL HOVER / CLICK AREA
+   ========================================================= */
+
+/* PDF and Save containers */
+.stDownloadButton {
+    position: relative !important;
+    z-index: 20 !important;
+    pointer-events: auto !important;
+}
+
+.stDownloadButton > button {
+    position: relative !important;
+    z-index: 21 !important;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+/* Keep icon/text from stealing the button click */
+.stDownloadButton > button * {
+    pointer-events: none !important;
+}
+
+
+/* Settings popover */
+[data-testid="stPopover"] {
+    position: relative !important;
+    z-index: 20 !important;
+    pointer-events: auto !important;
+}
+
+[data-testid="stPopover"] > button {
+    position: relative !important;
+    z-index: 21 !important;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+[data-testid="stPopover"] > button * {
+    pointer-events: none !important;
+}
+
+
+/* Full-button hover */
+.stDownloadButton > button:hover {
+    background: var(--cq-button-hover) !important;
+    color: var(--cq-text) !important;
+    border-color: var(--cq-green) !important;
+}
+
+[data-testid="stPopover"] > button:hover {
+    background: var(--cq-button-hover) !important;
+    color: var(--cq-text) !important;
+    border-color: var(--cq-green) !important;
+}
+
+
+/* Keep icons/text visible */
+.stDownloadButton > button svg,
+[data-testid="stPopover"] > button svg {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .page-title {
+        font-size: 1.7rem;
+    }
+
+    .welcome h1 {
+        font-size: 1.65rem;
+    }
+}
+
+
+/* =========================================================
+   MOBILE — SIDEBAR CONTROL IS ALWAYS WHITE
+   ONLY APPLIES TO PHONES
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    /* Keep the two Streamlit sidebar controls above the page */
+    [data-testid="stSidebarCollapseButton"],
+    [data-testid="stSidebarCollapsedControl"] {
+        z-index: 999999 !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    /*
+       IMPORTANT:
+       We do NOT change the button background here.
+       Only the icon itself is forced to white.
+       This prevents dark/light mode from changing it.
+    */
+
+    [data-testid="stSidebarCollapseButton"] button,
+    [data-testid="stSidebarCollapsedControl"] button {
+        color: #ffffff !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    [data-testid="stSidebarCollapseButton"] button svg,
+    [data-testid="stSidebarCollapsedControl"] button svg {
+        color: #ffffff !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    [data-testid="stSidebarCollapseButton"] button svg path,
+    [data-testid="stSidebarCollapsedControl"] button svg path {
+        stroke: #ffffff !important;
+        fill: none !important;
+        opacity: 1 !important;
+    }
+
+
+    /* Give the mobile page a little room below Streamlit's header */
+    .block-container {
+        padding-top: 2.8rem !important;
+        padding-left: 0.9rem !important;
+        padding-right: 0.9rem !important;
+    }
+
+    /* Center the workspace heading on phones */
+    .eyebrow {
+        text-align: center !important;
+    }
+
+    .page-title {
+        text-align: center !important;
+    }
+
+    .welcome {
+        text-align: center;
+    }
+
+    .welcome h1 {
+        font-size: 1.65rem;
+        text-align: center;
+    }
+
+    .welcome p {
+        text-align: center;
+    }
+
+    .badge {
+        text-align: center;
+    }
+
+
+    /* -----------------------------------------------------
+       Mobile PDF / Save buttons
+       Keep them visible and correctly themed.
+       ----------------------------------------------------- */
+
+    .stDownloadButton > button {
+        background: var(--cq-button) !important;
+        color: var(--cq-button-text) !important;
+        border: 1px solid var(--cq-button-border) !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    /*
+       Streamlit normally fades disabled PDF buttons.
+       Keep the button readable while still preventing clicks.
+    */
+    .stDownloadButton > button:disabled {
+        background: var(--cq-button) !important;
+        color: var(--cq-button-text) !important;
+        border: 1px solid var(--cq-button-border) !important;
+
+        opacity: 1 !important;
+        cursor: not-allowed !important;
+    }
+
+    .stDownloadButton > button:disabled svg {
+        opacity: 1 !important;
+        color: var(--cq-button-text) !important;
+        fill: var(--cq-button-text) !important;
+        stroke: var(--cq-button-text) !important;
+    }
+
+
+    /* -----------------------------------------------------
+       Mobile Settings button
+       ----------------------------------------------------- */
+
+    [data-testid="stPopover"] > button {
+        background: var(--cq-button) !important;
+        color: var(--cq-button-text) !important;
+        border: 1px solid var(--cq-button-border) !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    [data-testid="stPopover"] > button:hover {
+        background: var(--cq-button-hover) !important;
+        color: var(--cq-text) !important;
+        border-color: var(--cq-green) !important;
+    }
+
+    [data-testid="stPopover"] > button svg {
+        color: var(--cq-button-text) !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+}
+
+
+/* =========================================================
+   FINAL MOBILE UI — PHONE OPTIMIZATION
+   Civil QuantEstimate
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    /* ---------- APP / PAGE ---------- */
+
+    .block-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-top: 3.2rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+
+    .topline {
+        margin-bottom: 1rem !important;
+    }
+
+    .eyebrow {
+        font-size: 0.68rem !important;
+        letter-spacing: 0.08em !important;
+        text-align: center !important;
+        line-height: 1.4 !important;
+    }
+
+    .page-title {
+        font-size: 1.55rem !important;
+        line-height: 1.2 !important;
+        text-align: center !important;
+        margin-top: 0.35rem !important;
+    }
+
+    .page-subtitle {
+        font-size: 0.82rem !important;
+        line-height: 1.45 !important;
+        text-align: center !important;
+        margin-bottom: 1.1rem !important;
+    }
+
+
+    /* ---------- WELCOME / CARDS ---------- */
+
+    .welcome {
+        border-radius: 16px !important;
+        padding: 1.2rem 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .welcome h1 {
+        font-size: 1.7rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 0.55rem !important;
+    }
+
+    .welcome p {
+        font-size: 0.86rem !important;
+        line-height: 1.55 !important;
+    }
+
+    .badge {
+        font-size: 0.64rem !important;
+        padding: 0.3rem 0.55rem !important;
+    }
+
+    .metric,
+    .tool-card,
+    .panel,
+    .result,
+    .ai-panel {
+        border-radius: 15px !important;
+    }
+
+    .metric {
+        min-height: 100px !important;
+        padding: 0.95rem !important;
+    }
+
+    .tool-card {
+        min-height: auto !important;
+        padding: 1rem !important;
+    }
+
+    .panel {
+        padding: 1rem !important;
+        margin-bottom: 0.8rem !important;
+    }
+
+    .panel-title {
+        font-size: 1rem !important;
+        margin-bottom: 0.8rem !important;
+    }
+
+
+    /* =====================================================
+       FORM LABELS
+       Make labels clearly readable in dark AND light mode
+       ===================================================== */
+
+    [data-testid="stNumberInput"] label,
+    [data-testid="stSelectbox"] label,
+    [data-testid="stTextInput"] label,
+    [data-testid="stTextArea"] label {
+        color: var(--cq-text) !important;
+        font-size: 0.82rem !important;
+        font-weight: 700 !important;
+        line-height: 1.35 !important;
+        margin-bottom: 0.35rem !important;
+    }
+
+    [data-testid="stNumberInput"],
+    [data-testid="stSelectbox"],
+    [data-testid="stTextInput"],
+    [data-testid="stTextArea"] {
+        margin-bottom: 0.8rem !important;
+    }
+
+
+    /* =====================================================
+       NUMBER INPUTS
+       Clean large mobile controls
+       ===================================================== */
+
+    [data-testid="stNumberInput"] {
+        width: 100% !important;
+    }
+
+    [data-testid="stNumberInput"] > div {
+        width: 100% !important;
+        min-height: 52px !important;
+    }
+
+    [data-testid="stNumberInput"] input {
+        height: 52px !important;
+        min-height: 52px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+
+        background: var(--cq-input) !important;
+        color: var(--cq-text) !important;
+
+        border: 1px solid var(--cq-border) !important;
+        border-radius: 13px !important;
+
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+
+        padding: 0 3.4rem 0 0.9rem !important;
+    }
+
+    [data-testid="stNumberInput"] input:focus {
+        border-color: var(--cq-green) !important;
+        box-shadow: 0 0 0 1px var(--cq-green) !important;
+    }
+
+    /* Plus / minus controls */
+    [data-testid="stNumberInput"] button {
+        width: 48px !important;
+        min-width: 48px !important;
+        height: 50px !important;
+        min-height: 50px !important;
+
+        background: var(--cq-button) !important;
+        color: var(--cq-button-text) !important;
+
+        border: 1px solid var(--cq-border) !important;
+        border-radius: 0 !important;
+
+        font-size: 1.05rem !important;
+        font-weight: 850 !important;
+    }
+
+    [data-testid="stNumberInput"] button:first-of-type {
+        border-radius: 0 12px 12px 0 !important;
+    }
+
+    [data-testid="stNumberInput"] button:hover,
+    [data-testid="stNumberInput"] button:active {
+        background: var(--cq-button-hover) !important;
+        color: var(--cq-green) !important;
+    }
+
+    [data-testid="stNumberInput"] button svg {
+        color: currentColor !important;
+        stroke: currentColor !important;
+    }
+
+
+    /* =====================================================
+       SELECT BOXES
+       Fix the white box appearing in dark mode
+       ===================================================== */
+
+    [data-testid="stSelectbox"] {
+        width: 100% !important;
+    }
+
+    [data-testid="stSelectbox"] [data-baseweb="select"] {
+        width: 100% !important;
+    }
+
+    [data-testid="stSelectbox"] [data-baseweb="select"] > div {
+        min-height: 52px !important;
+        height: 52px !important;
+
+        background: var(--cq-input) !important;
+        background-color: var(--cq-input) !important;
+
+        border: 1px solid var(--cq-border) !important;
+        border-radius: 13px !important;
+
+        color: var(--cq-text) !important;
+        box-shadow: none !important;
+    }
+
+    [data-testid="stSelectbox"] [data-baseweb="select"] > div > div {
+        background: transparent !important;
+        color: var(--cq-text) !important;
+    }
+
+    [data-testid="stSelectbox"] [data-baseweb="select"] span {
+        color: var(--cq-text) !important;
+        font-size: 0.95rem !important;
+        font-weight: 600 !important;
+    }
+
+    [data-testid="stSelectbox"] [data-baseweb="select"] svg {
+        color: var(--cq-text) !important;
+        fill: var(--cq-text) !important;
+    }
+
+    /* Open select menu */
+    [role="listbox"] {
+        background: var(--cq-card) !important;
+        color: var(--cq-text) !important;
+        border: 1px solid var(--cq-border) !important;
+        border-radius: 12px !important;
+    }
+
+    [role="option"] {
+        background: var(--cq-card) !important;
+        color: var(--cq-text) !important;
+    }
+
+    [role="option"]:hover {
+        background: var(--cq-green-soft) !important;
+        color: var(--cq-green) !important;
+    }
+
+
+    /* =====================================================
+       TEXTAREA
+       ===================================================== */
+
+    [data-testid="stTextArea"] textarea {
+        min-height: 120px !important;
+        border-radius: 13px !important;
+
+        background: var(--cq-input) !important;
+        color: var(--cq-text) !important;
+
+        border: 1px solid var(--cq-border) !important;
+        font-size: 0.95rem !important;
+        padding: 0.8rem !important;
+    }
+
+
+    /* =====================================================
+       NORMAL BUTTONS
+       ===================================================== */
+
+    .stButton > button {
+        min-height: 48px !important;
+        border-radius: 12px !important;
+        font-size: 0.9rem !important;
+        font-weight: 750 !important;
+    }
+
+
+    /* =====================================================
+       TOP PDF / SAVE / SETTINGS
+       ===================================================== */
+
+    .stDownloadButton > button,
+    [data-testid="stPopover"] button {
+        min-height: 48px !important;
+        border-radius: 12px !important;
+
+        background: var(--cq-button) !important;
+        color: var(--cq-button-text) !important;
+
+        border: 1px solid var(--cq-button-border) !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+        box-shadow: none !important;
+    }
+
+    .stDownloadButton > button span,
+    .stDownloadButton > button p,
+    [data-testid="stPopover"] button span,
+    [data-testid="stPopover"] button p {
+        color: var(--cq-button-text) !important;
+    }
+
+    .stDownloadButton > button svg,
+    [data-testid="stPopover"] button svg {
+        color: var(--cq-button-text) !important;
+        stroke: var(--cq-button-text) !important;
+        opacity: 1 !important;
+    }
+
+    .stDownloadButton > button:hover,
+    [data-testid="stPopover"] button:hover {
+        background: var(--cq-button-hover) !important;
+        color: var(--cq-text) !important;
+        border-color: var(--cq-green) !important;
+    }
+
+
+    /* =====================================================
+       SIDEBAR ON PHONE
+       ===================================================== */
+
+   
+
+    [data-testid="stSidebarContent"] {
+        padding-left: 0.85rem !important;
+        padding-right: 0.85rem !important;
+    }
+
+    /* Sidebar navigation buttons */
+    [data-testid="stSidebar"] .stButton > button {
+        min-height: 44px !important;
+        border-radius: 10px !important;
+        font-size: 0.86rem !important;
+    }
+
+    /* Sidebar toggle icon ALWAYS white on phones */
+    [data-testid="stSidebarCollapseButton"] button,
+    [data-testid="stSidebarCollapsedControl"] button {
+        color: #ffffff !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    [data-testid="stSidebarCollapseButton"] button svg,
+    [data-testid="stSidebarCollapsedControl"] button svg {
+        color: #ffffff !important;
+        stroke: #ffffff !important;
+        fill: none !important;
+        opacity: 1 !important;
+    }
+
+
+    /* =====================================================
+       MOBILE SPACING
+       ===================================================== */
+
+    .section-title {
+        font-size: 1.05rem !important;
+        margin-top: 1.15rem !important;
+    }
+
+    .section-sub {
+        font-size: 0.75rem !important;
+        line-height: 1.45 !important;
+    }
+
+    .helper {
+        font-size: 0.72rem !important;
+        line-height: 1.45 !important;
+    }
+
+    /* Prevent horizontal overflow */
+    .stApp,
+    .main,
+    [data-testid="stAppViewContainer"] {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+}
